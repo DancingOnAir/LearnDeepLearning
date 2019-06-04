@@ -36,3 +36,7 @@ previous = id(Y)
 Y += X
 print(id(Y) == previous)
 
+Z = nd.arange(4).reshape(2, 2)
+print(Z)
+print(Z.norm())
+
