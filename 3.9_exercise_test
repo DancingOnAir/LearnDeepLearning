@@ -1,0 +1,36 @@
+h1 256
+epoch 1, loss 0.8164, train acc 0.692, test acc 0.782
+epoch 2, loss 0.4904, train acc 0.820, test acc 0.845
+epoch 3, loss 0.4331, train acc 0.840, test acc 0.854
+epoch 4, loss 0.3961, train acc 0.856, test acc 0.863
+epoch 5, loss 0.3729, train acc 0.862, test acc 0.861
+
+
+h1 512
+epoch 1, loss 0.8058, train acc 0.701, test acc 0.822
+epoch 2, loss 0.4850, train acc 0.822, test acc 0.821
+epoch 3, loss 0.4259, train acc 0.843, test acc 0.864
+epoch 4, loss 0.3910, train acc 0.856, test acc 0.872
+epoch 5, loss 0.3707, train acc 0.863, test acc 0.872
+
+h1 1024
+epoch 1, loss 0.7495, train acc 0.722, test acc 0.834
+epoch 2, loss 0.4829, train acc 0.820, test acc 0.847
+epoch 3, loss 0.4194, train acc 0.844, test acc 0.859
+epoch 4, loss 0.3867, train acc 0.857, test acc 0.867
+epoch 5, loss 0.3603, train acc 0.866, test acc 0.875
+
+
+h1 256 h2 138
+epoch 1, loss 1.2744, train acc 0.510, test acc 0.761
+epoch 2, loss 0.5693, train acc 0.785, test acc 0.835
+epoch 3, loss 0.4716, train acc 0.825, test acc 0.847
+epoch 4, loss 0.4198, train acc 0.844, test acc 0.847
+epoch 5, loss 0.3919, train acc 0.855, test acc 0.856
+
+h1 1024 h2 256
+epoch 1, loss 0.9740, train acc 0.622, test acc 0.805
+epoch 2, loss 0.5206, train acc 0.805, test acc 0.840
+epoch 3, loss 0.4363, train acc 0.839, test acc 0.856
+epoch 4, loss 0.3965, train acc 0.854, test acc 0.856
+epoch 5, loss 0.3765, train acc 0.861, test acc 0.874
