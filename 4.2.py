@@ -12,7 +12,10 @@ X = nd.random.uniform(shape=(2, 20))
 Y = net(X)
 
 # print(X)
-# print(net[0].params, type(net[0].params))
+print(net[0].params)
+print(type(net[0].params))
+print(net[0].weight)
+print(type(net[0].weight))
 # print(net[1].params, type(net[1].params))
 # print(net[0].params['dense0_weight'] == net[0].weight)
 # print(net[0].weight.data())
@@ -29,13 +32,13 @@ Y = net(X)
 # print(net[0].weight.grad())
 
 net.initialize(init=init.Normal(sigma=0.01), force_reinit=True)
-print(net[0].weight.data()[0])
+# print(net[0].weight.data()[0])
 
 net.initialize(init=init.Constant(1), force_reinit=True)
-print(net[0].weight.data()[0])
+# print(net[0].weight.data()[0])
 
 net[0].weight.initialize(init=init.Xavier(), force_reinit=True)
-print(net[0].weight.data()[0])
+# print(net[0].weight.data()[0])
 
 
 class MyInit(init.Initializer):
@@ -46,9 +49,9 @@ class MyInit(init.Initializer):
 
 
 net.initialize(MyInit(), force_reinit=True)
-print(net[0].weight.data()[0])
+# print(net[0].weight.data()[0])
 net[0].weight.set_data(net[0].weight.data() + 1)
-print(net[0].weight.data()[0])
+# print(net[0].weight.data()[0])
 
 
 net = nn.Sequential()
@@ -58,8 +61,10 @@ net.add(nn.Dense(8, activation='relu'),
         nn.Dense(8, activation='relu', params=shared.params),
         nn.Dense(10))
 net.initialize()
+# print(net.collect_params())
+# print(net[0].weight.data())
 
 X = nd.random.uniform(shape=(2, 20))
-print(net(X))
-print(net.collect_params())
-print(net[1].weight.data() == net[2].weight.data())
+net(X)
+# print(net.collect_params())
+# print(net[1].weight.data() == net[2].weight.data())
